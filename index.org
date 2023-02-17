@@ -1,0 +1,11 @@
+#+TITLE: DemonKingSwarn's website
+#+AUTHOR: DemonKingSwarn
+
+* weblog
+
+DemonKingSwarn's personal blog, featuring a grab bag of stories, computers, photos, mind, and all the other thoughts that won't let me go.
+
+A weblog means a personal blog rather than a corporate one. It's a retro word for a retro person.
+
+* 2023
+[[https://demonkingswarn.is-a.dev/blog/first_blog.html][2023-02-17 Hello blog!]]
