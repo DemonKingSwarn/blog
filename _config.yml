@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-feed
+title: DemonKingSwarn's Blog
+description: Welcome to my weblog
+author: DemonKingSwarn
