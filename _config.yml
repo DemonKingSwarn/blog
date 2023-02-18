@@ -1,5 +1,7 @@
+highlighter: rouge
 plugins:
   - jekyll-feed
 title: DemonKingSwarn's Blog
 description: Welcome to my weblog
 author: DemonKingSwarn
+permalink: /:year/:month/:day/:title:output_ext
