@@ -1,5 +1,6 @@
 #+TITLE: DemonKingSwarn's website
 #+AUTHOR: DemonKingSwarn
+#+TAGS: jekyll org-mode "demonkingswarn's blog in orgmode"
 
 * weblog
 
