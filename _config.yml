@@ -1,6 +1,7 @@
 highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-org-to-html
 title: DemonKingSwarn's Blog
 description: Welcome to my weblog
 author: DemonKingSwarn
