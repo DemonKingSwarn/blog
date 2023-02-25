@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-02-25 Sat 18:56 -->
+<!-- 2023-02-25 Sat 18:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DemonKingSwarn's website</title>
+<title>Linux Gaming Guide</title>
 <meta name="author" content="DemonKingSwarn" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -196,51 +196,196 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">DemonKingSwarn's website</h1>
+<h1 class="title">Linux Gaming Guide</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5b51b13">1. weblog</a></li>
-<li><a href="#org3d2fcc4">2. 2023</a></li>
+<li><a href="#org7c793ff">1. Enable Game Mode scheduling</a></li>
+<li><a href="#org2e9fcd3">2. Installing Stuffs</a>
+<ul>
+<li><a href="#org7894b5c">2.1. Wine-Staging</a></li>
+<li><a href="#org213fe92">2.2. Proton-GE</a></li>
+<li><a href="#org7656498">2.3. DXVK &amp; VKD3D</a></li>
+<li><a href="#org863fc3b">2.4. vkbasalt</a></li>
+<li><a href="#orgd6bb274">2.5. gamescope</a></li>
+</ul>
+</li>
+<li><a href="#org8994963">3. For games outside of steam</a></li>
+<li><a href="#orgf5734da">4. Done</a></li>
 </ul>
 </div>
 </div>
+<p>
+How to run games on Arch (and configure Steam and Proton).
+</p>
 
-<div id="outline-container-org5b51b13" class="outline-2">
-<h2 id="org5b51b13"><span class="section-number-2">1.</span> weblog</h2>
+<div id="outline-container-org7c793ff" class="outline-2">
+<h2 id="org7c793ff"><span class="section-number-2">1.</span> Enable Game Mode scheduling</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-DemonKingSwarn's personal blog, featuring a grab bag of stories, computers, photos, mind, and all the other thoughts that won't let me go.
+Game Mode configures CPU governer, scheduler, and process niceness for maximum performance for games. To enable Game Mode:
 </p>
 
+<ol class="org-ol">
+<li><p>
+First enable the <code>multilib</code> repo if you haven't already. Edit <code>/etc/pacman.conf</code> to add
+</p>
+<pre class="example">
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+</pre></li>
+
+<li>Synchronize the repos by <code>sudo pacman -Syy</code></li>
+
+<li><p>
+Install Game Mode
+</p>
+<pre class="example">
+sudo pacman -S lib32-gamemode gamemode
+</pre></li>
+
+<li>You can run Game Mode by running <code>gamemoderun</code> command.</li>
+
+<li>Create a new user group with <code>sudo groupadd -r gamemode</code>.</li>
+
+<li>Add yourself to the group by <code>sudo usermod -aG gamemode &lt;your username&gt;</code>.</li>
+
+<li><p>
+Edit system security limits for users <code>sudo nvim /etc/security/limits.conf</code> to add the line:
+</p>
+<pre class="example">
+@gamemode      -        nice         10
+</pre></li>
+</ol>
 <p>
-A weblog means a personal blog rather than a corporate one. It's a retro word for a retro person.
+This will enable user accounts that are members of the gamemode group to increase (or 'renice') processes to a value of 10.
 </p>
 
-<p>
-Subscribe to my blog: <a href="https://demonkingswarn.is-a.dev/blog/feed.xml">RSS</a>
-</p>
+<ol class="org-ol">
+<li>Now test everything is working by running <code>gamemoded -t</code> and fix any errors (hopefully none).</li>
+</ol>
 </div>
 </div>
 
-<div id="outline-container-org3d2fcc4" class="outline-2">
-<h2 id="org3d2fcc4"><span class="section-number-2">2.</span> 2023</h2>
+<div id="outline-container-org2e9fcd3" class="outline-2">
+<h2 id="org2e9fcd3"><span class="section-number-2">2.</span> Installing Stuffs</h2>
 <div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7894b5c" class="outline-3">
+<h3 id="org7894b5c"><span class="section-number-3">2.1.</span> Wine-Staging</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre class="src src-sh">sudo pacman -S wine-staging
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org213fe92" class="outline-3">
+<h3 id="org213fe92"><span class="section-number-3">2.2.</span> Proton-GE</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
-<a href="https://demonkingswarn.is-a.dev/blog/2023/02/25/linux-gaming-guide">2023-02-25 Linux Gaming Guide</a>
+Go to <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases">GitHub Releases</a> and download the latest version, as of today 25th Feb 2023 its 7.49 so I will be using that for this guide.
 </p>
 
+<div class="org-src-container">
+<pre class="src src-sh">cd .steam/steam/compatibilitytools.d/
+wget "https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-49/GE-Proton7-49.tar.gz"
+tar -xvf GE-Proton7-49.tar.gz
+rm *.tar.gz
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7656498" class="outline-3">
+<h3 id="org7656498"><span class="section-number-3">2.3.</span> DXVK &amp; VKD3D</h3>
+<div class="outline-text-3" id="text-2-3">
 <p>
-<a href="https://demonkingswarn.is-a.dev/blog/2023/02/18/fix-for-phone-not-being-detected-on-arch-linux">2023-02-18 Fix For Phone Not Being Detected On (Arch) Linux</a>
+NOTE: for this you have to use the <b>AUR</b> helper
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">paru -S dxvk-bin vkd3d-proton-bin
+cd /usr/share/dxvk
+./setup_dxvk.sh install
+cd /usr/share/vkd3d-proton
+./setup_vkd3d_proton.sh install
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org863fc3b" class="outline-3">
+<h3 id="org863fc3b"><span class="section-number-3">2.4.</span> vkbasalt</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Similar to gamemode but specific to <code>VULKAN</code> games.
 </p>
 
+<div class="org-src-container">
+<pre class="src src-sh">paru -S vkbasalt lib32-vkbasalt
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd6bb274" class="outline-3">
+<h3 id="orgd6bb274"><span class="section-number-3">2.5.</span> gamescope</h3>
+<div class="outline-text-3" id="text-2-5">
 <p>
-<a href="https://demonkingswarn.is-a.dev/blog/2023/02/18/nixos-aint-worth-it.html">2023-02-18 NixOS ain't worth it</a>
+gamescope is pretty amazing, its a wayland based compositor for games which also removes the vsync barrier of wayland and also HDR.
 </p>
 
+<div class="org-src-container">
+<pre class="src src-sh">sudo pacman -S gamescope
+</pre>
+</div>
+
 <p>
-<a href="https://demonkingswarn.is-a.dev/blog/2023/02/17/hello-blog.html">2023-02-17 Hello blog!</a>
+If you are on NVIDIA GPU then to use gamescope you need this script which I call it gamescope-run
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">#!/bin/sh
+
+export AMD_VULKAN_ICD=RADV
+igpu=$(lspci -nn | grep VGA | sed 's/^.*\[//;s/\].*$//' | head -n 1)
+
+gamescope --default-touch-mode 4 --prefer-vk-device $igpu --rt -w 1920 -h 1080 -W 1920 -H 1080 -f -U $@
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8994963" class="outline-2">
+<h2 id="org8994963"><span class="section-number-2">3.</span> For games outside of steam</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+In that case you have to use this proton script I made to run those <b>cracked</b> games, yes I know it, with the same optimizations
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">#!/bin/sh
+
+PROTON="$HOME/.steam/steam/compatibilitytools.d/GE-Proton7-48/proton"
+STEAM_COMPAT_DATA_PATH="$HOME/.proton" STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME/.local/share/Steam" VKD3D_CONFIG=dxr PROTON_ENABLE_NVAPI=1 __VK_LAYER_NV_optimus=NVIDIA_only VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json __GL_SHADER_DISK_CACHE=1 WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FAKE_CURRENT_RES=960x540 ENABLE_VKBASALT=1 LD_PRELOAD=$LD_PRELOAD:/usr/\$LIB/libgamemodeauto.so.0 "$PROTON" run $*
+</pre>
+</div>
+
+<p>
+You can remove the <code>PROTON_ENABLE_NVAPI=1</code> and other NVIDIA variables if you don't have a NVIDIA GPU.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5734da" class="outline-2">
+<h2 id="orgf5734da"><span class="section-number-2">4.</span> Done</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Congratulations on completing the setup, now you can enjoy high end gaming on linux with optimized performance. Happy Gaming 😁.
 </p>
 </div>
 </div>

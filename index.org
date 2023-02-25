@@ -12,6 +12,8 @@ Subscribe to my blog: [[https://demonkingswarn.is-a.dev/blog/feed.xml][RSS]]
 
 * 2023
 
+[[https://demonkingswarn.is-a.dev/blog/2023/02/25/linux-gaming-guide][2023-02-25 Linux Gaming Guide]]
+
 [[https://demonkingswarn.is-a.dev/blog/2023/02/18/fix-for-phone-not-being-detected-on-arch-linux][2023-02-18 Fix For Phone Not Being Detected On (Arch) Linux]]
 
 [[https://demonkingswarn.is-a.dev/blog/2023/02/18/nixos-aint-worth-it.html][2023-02-18 NixOS ain't worth it]]
