@@ -1,9 +1,9 @@
-```
+---
 layout: post
 title: Hello Blog!
 updated: 2023-02-17
 category: posts
-```
+---
 
 <p>
 Opening with a cheesy title, as is tradition. Welcome to the first post here. Yaaaaaay.
