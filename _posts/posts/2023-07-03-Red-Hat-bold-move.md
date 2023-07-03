@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Red Hats Bold Move Selling Red Hat Enterprise Linux, Despite Being Open Source
+title: Red Hat's Bold Move Selling Red Hat Enterprise Linux, Despite Being Open Source
 updated: 2023-07-04
 category: posts
 ---
