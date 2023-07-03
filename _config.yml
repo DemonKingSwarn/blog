@@ -4,4 +4,4 @@ plugins:
 title: DemonKingSwarn's Blog
 description: Welcome to my weblog
 author: DemonKingSwarn
-permalink: /:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title
