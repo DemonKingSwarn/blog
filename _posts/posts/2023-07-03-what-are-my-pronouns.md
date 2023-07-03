@@ -16,7 +16,9 @@ I dunno, what are they? Your guess is as good as mine...
 <br>
 Third-person pronouns, such as he, him, she, her, it, they, are used by a person that isn't me in order to refer to me without having to say my full name each time.
 <br>
+<br>
 I don't say my own pronouns, because I am me.
+<br>
 <br>
 Therefore my pronouns are whatever other people say I am.
 </details>
