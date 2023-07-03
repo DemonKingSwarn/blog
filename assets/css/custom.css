@@ -1,6 +1,6 @@
 :root {
   --border-radius: 4px;
-  --strava-brand-color: #e34402;
+  --strava-brand-color: #bd93f9;
 }
 
 html {
@@ -20,19 +20,35 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: 'Fira Code', monospace;
   margin: 0;
   padding: 1.2rem;
+  background-color: #282a36;
+  color: #f8f8f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-  color: #00e;
+  color: #6272a4;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .container main {
@@ -44,7 +60,7 @@ a:hover {
 }
 
 main img {
-  box-shadow: 0px 0px 6px #aeaeae;
+  box-shadow: 0px 0px 6px #6272a4;
   border-radius: var(--border-radius);
   max-width: 100%;
   padding: 6px;
@@ -75,7 +91,7 @@ nav ul li:not(:last-of-type) {
 }
 
 .posts {
-  border-left: 1px dashed #aeaeae;
+  border-left: 1px dashed #6272a4;
   list-style: none;
   padding-left: 1.25rem;
 }
@@ -97,9 +113,9 @@ nav ul li:not(:last-of-type) {
 }
 
 .post::after {
-  border: 1px solid #bdbbbb;
+  border: 1px solid #bd93f9;
   border-radius: 50%;
-  background-color: white;
+  background-color: #282a36;
   content: '';
   height: 0.5rem;
   left: -1.5rem;
@@ -119,7 +135,7 @@ blockquote {
 }
 
 blockquote::before {
-  background-color: #32b81f;
+  background-color: #50fa7b;
   border-radius: var(--border-radius);
   bottom: 0px;
   content: '';
@@ -134,7 +150,7 @@ blockquote::before {
 }
 
 code {
-  background-color: #f3f3f3;
+  background-color: #44475a;
   border-radius: var(--border-radius);
   font-size: 0.85rem;
   padding: 3px 6px;
@@ -159,7 +175,7 @@ pre code {
 }
 
 hr {
-  color: #565656;
+  color: #6272a4;
   margin: 2rem auto;
   width: 8rem;
 }
@@ -172,6 +188,7 @@ header h1 {
   font-size: 1.75rem;
   margin: 0;
   margin-bottom: 1.2rem;
+  color: #f8f8f2;
 }
 
 header h1 span {
@@ -193,7 +210,7 @@ article h2 {
 }
 
 .post-meta {
-  color: #565656;
+  color: #6272a4;
   font-size: 0.75rem;
   margin-top: 0;
 }
@@ -213,7 +230,7 @@ article h2 {
 
 .post.published-recently.confetti-please .publish-date,
 .post.published-recently.confetti-please a {
-  background-color: white;
+  background-color: #282a36;
 }
 
 .strava-card .strava-card-title {
@@ -251,7 +268,7 @@ article h2 {
 }
 
 .strava-card .label {
-  color: #565656;
+  color: #6272a4;
   font-size: 0.75rem;
 }
 
@@ -310,29 +327,29 @@ article h2 {
 }
 
 .btn-twitter {
-  background-color: #1b95e0;
+  background-color: #8be9fd;
 }
 
 .btn-twitter:active,
 .btn-twitter:focus,
 .btn-twitter:hover {
-  background-color: #0c7abf;
+  background-color: #83a598;
 }
 
 .btn-github {
-  background-color: #24292e;
+  background-color: #44475a;
 }
 
 .btn-github:hover {
-  background-color: #515960;
+  background-color: #6272a4;
 }
 
 .btn-rss {
-  background-color: #b9501f;
+  background-color: #ffb86c;
 }
 
 .btn-rss:hover {
-  background-color: #923507;
+  background-color: #d65d0e;
 }
 
 .follow-btns .btn + .btn {
@@ -422,3 +439,4 @@ article h2 {
     height: 250px;
   }
 }
+
