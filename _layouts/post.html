@@ -25,6 +25,13 @@
       </ul>
     </nav>
 
+    <main>
+      <article>
+        <h2>{{ page.title }}</h2>
+        {% include published.html %} {{ content }}       
+      </article>
+    </main>
+
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
