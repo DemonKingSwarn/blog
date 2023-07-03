@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From Life Stories to Recipes Unravelling the Art of Online Cullinary Narratives
+title: From Life Stories to Recipes: Unravelling the Art of Online Cullinary Narratives
 updated: 2023-07-04
 category: posts
 ---
