@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel='stylesheet' type='text/css' href='./style.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} | DemonKingSwarn</title>
+
+    <link href="/assets/css/rouge-github.css" rel="stylesheet" />
+    <link href="/assets/css/custom.css" rel="stylesheet" />
 
     <link
       rel="alternate"
@@ -18,5 +20,26 @@
   <body>
     {% include header.html %}
 
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts">Posts</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <main>{{ content }}</main>
+      <aside>
+        <div class="strava-card">
+          <h3 class="strava-card-title">Latest run on Strava</h3>
+          <div class="strava-card-body"></div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/css-paint-polyfill@3.2.0/dist/css-paint-polyfill.js"></script>
+    <script src="/assets/js/confetti.js"></script>
   </body>
 </html>

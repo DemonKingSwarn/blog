@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='stylesheet' type='text/css' href='./style.css'>
     <title>{{ page.title }} | DemonKingSwarn</title>
+
+    <link href="/assets/css/rouge-github.css" rel="stylesheet" />
+    <link href="/assets/css/custom.css" rel="stylesheet" />
 
     <link
       rel="alternate"
@@ -17,5 +19,22 @@
   </head>
   <body class="single-post">
     {% include header.html %}
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts">Posts</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>{{ page.title }}</h2>
+        {% include published.html %} {{ content }} {% include
+        share-on-twitter.html %}
+      </article>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
