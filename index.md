@@ -3,6 +3,12 @@ layout: default
 title: Home
 ---
 
+Swarn's personal blog, featuring a grab bag of stories, computers, photos, mind, and all the other thoughts that won't let me go.
+
+A weblog means a personal blog rather than a corporate one. It's a retro word for a retro person.
+
+[rss](/blog/feed.xml)
+
 ## Recent posts
 
 <ul class="posts">
@@ -16,4 +22,4 @@ title: Home
   {% endfor %}
 </ul>
 
-[See all posts](/posts)
+[See all posts](/blog/posts)
