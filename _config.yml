@@ -1,6 +1,7 @@
 highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 timezone: Asia/Kolkata
 title: DemonKingSwarn's Blog
 description: Welcome to my weblog
