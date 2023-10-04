@@ -7,7 +7,7 @@ category: posts
 
 I really admire Elliot from "Mr. Robot." He's a complex character, and I want to share why I love him.
 
-[](https://blog.bugswriter.com/images/blog/elliot-quote-on-people.jpg)
+![](https://blog.bugswriter.com/images/blog/elliot-quote-on-people.jpg)
 
 **Few words on him:**
 
@@ -21,7 +21,7 @@ One important thing to learn from Elliot is how he doesn't judge people based on
 
 For example, there's a character named Gideon who is gay. Elliot doesn't care about that at all. He sees Gideon as a good person, even though Gideon might be doing some things that aren't great without realizing it. Elliot doesn't let differences like this make him hate people.
 
-[](https://blog.bugswriter.com/images/blog/fsociety-group.jpg)
+![](https://blog.bugswriter.com/images/blog/fsociety-group.jpg)
 
 **In fsociety:**
 
@@ -29,7 +29,7 @@ Elliot's attitude extends to his group, fsociety. He cares about people like Tre
 
 Elliot also becomes friends with Shayla, who's poor and involved with drugs. He doesn't care about society's judgments or social status.
 
-[](https://blog.bugswriter.com/images/blog/elliot-dream.jpg)
+![](https://blog.bugswriter.com/images/blog/elliot-dream.jpg)
 
 **In last:**
 
