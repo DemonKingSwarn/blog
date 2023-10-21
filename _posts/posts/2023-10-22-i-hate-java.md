@@ -35,7 +35,9 @@ Executed well, this can be a good system.
 
 Java does not execute it well.
 
-If you already know how types work, you should have skipped to here as directed above.
+
+<font color="orange">If you already know how types work, you should have skipped to here as directed above.</font>
+
 
 I have three main gripes with generics so far, and it seems that every time I try to do anything interesting in Java I discover a brand new gripe and eventually just give up because I cannot do the thing that I want to do.
 
