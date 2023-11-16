@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enabling Discord RPC for WINE Games
-updated: 2023-07-13
+updated: 2023-11-16
 category: posts
 ---
 
