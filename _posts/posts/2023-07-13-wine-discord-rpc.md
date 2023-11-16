@@ -18,5 +18,3 @@ I used this method on Arch Linux, though it should work the same on all other di
 - Run winetricks/protontricks, select your wine prefix (default prefix if using protontricks), and run winecfg
 - Head to the libraries tab, and add a new override for library by typing in `discord-rpc` and clicking add. Hit Apply, and then OK
 - Run your game the way you usually would, and RPC should be working now
-
-Note: This has to be done for each game individually. There might be a way to set it up for all wineprefixes at once, but I'm not aware of how to do that.
