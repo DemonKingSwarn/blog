@@ -32,7 +32,7 @@ body {
 }
 
 a {
-  color: #6272a4;
+  color: #bd93f9;
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ a:hover {
 }
 
 main img {
-  box-shadow: 0px 0px 6px #6272a4;
+  box-shadow: 0px 0px 6px #bd93f9;
   border-radius: var(--border-radius);
   max-width: 100%;
   padding: 6px;
@@ -91,7 +91,7 @@ nav ul li:not(:last-of-type) {
 }
 
 .posts {
-  border-left: 1px dashed #6272a4;
+  border-left: 1px dashed #bd93f9;
   list-style: none;
   padding-left: 1.25rem;
 }
@@ -175,7 +175,7 @@ pre code {
 }
 
 hr {
-  color: #6272a4;
+  color: #bd93f9;
   margin: 2rem auto;
   width: 8rem;
 }
@@ -210,7 +210,7 @@ article h2 {
 }
 
 .post-meta {
-  color: #6272a4;
+  color: #bd93f9;
   font-size: 0.75rem;
   margin-top: 0;
 }
@@ -268,7 +268,7 @@ article h2 {
 }
 
 .strava-card .label {
-  color: #6272a4;
+  color: #bd93f9;
   font-size: 0.75rem;
 }
 
@@ -341,7 +341,7 @@ article h2 {
 }
 
 .btn-github:hover {
-  background-color: #6272a4;
+  background-color: #bd93f9;
 }
 
 .btn-rss {
