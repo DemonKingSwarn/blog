@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: braindumps
 title: I Hate Writing Code on Paper in University
 updated: 2023-11-06
-category: posts
+category: braindumps
 ---
 
 I'm a computer science major, and I've had my fair share of coding exams. And let me tell you, I hate writing code on paper.
