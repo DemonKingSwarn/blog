@@ -4,11 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} | DemonKingSwarn</title>
-
     <link href="/blog/assets/css/rouge-github.css" rel="stylesheet" />
     <link href="/blog/assets/css/custom.css" rel="stylesheet" />
-    
-
     <link
       rel="alternate"
       type="application/atom+xml"
@@ -18,7 +15,7 @@
 
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   </head>
-  <body>
+  <body class="single-post">
     {% include header.html %}
 
     <nav>
@@ -29,13 +26,27 @@
       </ul>
     </nav>
 
-    <div class="container">
-      <main>{{ content }}</main>
-    </div>
+    <main>
+      <article>
+        <h2>{{ page.title }}</h2>
+        {% include published.html %} {{ content }}       
+      </article>
+    </main>
 
     <script src="/assets/js/main.js"></script>
-
-    <script src="https://unpkg.com/css-paint-polyfill@3.2.0/dist/css-paint-polyfill.js"></script>
-    <script src="/assets/js/confetti.js"></script>
+    <script src="https://giscus.app/client.js"
+        data-repo="DemonKingSwarn/blog"
+        data-repo-id="R_kgDOI_MC3A"
+        data-category-id="DIC_kwDOI_MC3M4CaRat"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
   </body>
 </html>
