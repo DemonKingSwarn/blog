@@ -23,7 +23,7 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 </ul>
 
 <ul class="braindumps">
-  {% for post in site.categories.mind limit:6 %}
+  {% for mind in site.categories.braindumps limit:6 %}
     <li class="mind">
       <a href="/blog{{ mind.url }}">{{ mind.title }}</a>
       <time class="publish-date" datetime="{{ mind.date | date: '%F' }}">
@@ -35,4 +35,4 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 
 
 [See all blogs](/blog/posts)
-[See all braindumps](/blog/mind)
+[See all braindumps](/blog/braindumps)
