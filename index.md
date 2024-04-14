@@ -27,11 +27,11 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 ## Recent braindumps
 
 <ul class="braindumps">
-  {% for mind in site.categories.braindumps limit:6 %}
-    <li class="mind">
-      <a href="/blog{{ mind.url }}">{{ mind.title }}</a>
-      <time class="publish-date" datetime="{{ mind.date | date: '%F' }}">
-        {{ mind.date | date: "%B %-d, %Y" }}
+  {% for braindump in site.categories.braindumps limit:6 %}
+    <li class="braindumps">
+      <a href="/blog{{ braindump.url }}">{{ braindump.title }}</a>
+      <time class="publish-date" datetime="{{ braindump.date | date: '%F' }}">
+        {{ braindump.date | date: "%B %-d, %Y" }}
       </time>
     </li>
   {% endfor %}
