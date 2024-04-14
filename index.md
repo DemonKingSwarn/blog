@@ -28,7 +28,7 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 
 <ul class="braindumps">
   {% for braindump in site.categories.braindumps limit:6 %}
-    <li class="braindumps">
+    <li class="braindump">
       <a href="/blog{{ braindump.url }}">{{ braindump.title }}</a>
       <time class="publish-date" datetime="{{ braindump.date | date: '%F' }}">
         {{ braindump.date | date: "%B %-d, %Y" }}
