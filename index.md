@@ -34,5 +34,4 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 </ul>
 
 
-[See all blogs](/blog/posts)
-[See all braindumps](/blog/braindumps)
+[See all blogs](/blog/posts) | [See all braindumps](/blog/braindumps)
