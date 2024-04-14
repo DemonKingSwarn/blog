@@ -9,7 +9,7 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 
 [rss](/blog/feed.xml)
 
-## Recent posts
+## Recent blogs
 
 <ul class="posts">
   {% for post in site.categories.posts limit:6 %}
@@ -22,6 +22,10 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
   {% endfor %}
 </ul>
 
+[See all blogs](/blog/posts)
+
+## Recent braindumps
+
 <ul class="braindumps">
   {% for mind in site.categories.braindumps limit:6 %}
     <li class="mind">
@@ -33,5 +37,4 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
   {% endfor %}
 </ul>
 
-
-[See all blogs](/blog/posts) | [See all braindumps](/blog/braindumps)
+[See all braindumps](/blog/braindumps)

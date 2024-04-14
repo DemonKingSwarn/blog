@@ -1,5 +1,5 @@
 ---
-layout: mind
+layout: braindumps
 title: Calling All Demigods! Percy Jackson and the Wrath of the Triple Goddess is Coming!
 updated: 2024-04-14
 category: braindumps
