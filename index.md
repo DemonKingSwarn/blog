@@ -22,4 +22,17 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
   {% endfor %}
 </ul>
 
-[See all posts](/blog/posts)
+<ul class="braindumps">
+  {% for post in site.categories.mind limit:6 %}
+    <li class="mind">
+      <a href="/blog{{ mind.url }}">{{ mind.title }}</a>
+      <time class="publish-date" datetime="{{ mind.date | date: '%F' }}">
+        {{ mind.date | date: "%B %-d, %Y" }}
+      </time>
+    </li>
+  {% endfor %}
+</ul>
+
+
+[See all blogs](/blog/posts)
+[See all braindumps](/blog/mind)

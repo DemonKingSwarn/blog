@@ -2,7 +2,7 @@
 layout: mind
 title: Calling All Demigods! Percy Jackson and the Wrath of the Triple Goddess is Coming!
 updated: 2024-04-14
-category: posts
+category: braindumps
 ---
 
 Hey everyone, as you all already know that I am a massive fan of the Percy Jackson books. I am writing this post to discuss what we know till now about the new upcoming Percy Jackson and the Wrath of the Triple Goddess book in September of 2024.
