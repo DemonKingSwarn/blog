@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: braindumps
 title: I Hate JAVA
 updated: 2023-10-22
-category: posts
+category: braindumps
 ---
 
 I hate Java. And in this post, I'll talk about why I hate its type system. Maybe in the future I'll write about why I hate its other stuff.
