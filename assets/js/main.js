@@ -247,3 +247,28 @@
     return document.body.classList.contains('single-post');
   }
 })();
+
+// Adjust viewport meta tag for mobile screens
+function adjustViewport() {
+    var viewport = document.querySelector("meta[name=viewport]");
+    if (viewport) {
+        var screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+        var viewportContent = "width=device-width, initial-scale=1.0";
+        if (screenWidth < 768) {
+            // Adjust viewport for smaller screens (e.g., mobile phones)
+            viewportContent += ", maximum-scale=1.0, user-scalable=0";
+        }
+        viewport.setAttribute("content", viewportContent);
+    }
+}
+
+// Listen for orientation change events and adjust viewport accordingly
+window.addEventListener("orientationchange", function() {
+    adjustViewport();
+});
+
+// Adjust viewport initially when the page loads
+window.addEventListener("DOMContentLoaded", function() {
+    adjustViewport();
+});
+
