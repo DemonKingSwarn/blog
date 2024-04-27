@@ -8,3 +8,5 @@ title: DemonKingSwarn's Blog
 description: Welcome to my weblog
 author: DemonKingSwarn
 permalink: /:year/:month/:day/:title
+feed:
+  path: /blog/feed.xslt.xml
