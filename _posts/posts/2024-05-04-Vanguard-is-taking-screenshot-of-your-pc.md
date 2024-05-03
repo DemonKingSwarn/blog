@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why I Don't Trust Riot Games and Their Anti-Cheat
+title: Vanguard Is Taking Screenshot of Your PC!
 updated: 2024-05-04
 category: posts
 ---
