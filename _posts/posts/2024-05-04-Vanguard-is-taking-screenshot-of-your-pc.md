@@ -7,11 +7,11 @@ category: posts
 
 Hey everyone,
 
-There's been some buzz lately about Vanguard, the anti-cheat software fo Valorant (and soon to be for League of Legends), and its alleged screenshot taking capabilities. Today, we're diving deep into this topic to understand what's happening and what it means for you.
+There's been some buzz lately about Vanguard, the anti-cheat software for Valorant (and soon to be for League of Legends aswell), and its alleged screenshot taking capabilities. Today, we're diving deep into this topic to understand what's happening and what it means for you.
 
 **The Short Story:**
 
-- Vanguard can capture screenshots of your entire PC screen, including overlayes like Discord chats.
+- Vanguard can capture screenshots of your entire PC screen, including overlays like Discord chats.
 
 - These screenshots may be uploaded to their servers, potentially ending up in locations outside your region (e.g. EU data on US servers).
 
@@ -29,7 +29,7 @@ A Researcher (**@0xCODEBABE**) discovered a module within Vanguard that takes sc
 
 - This screenshotting happens per game session.
 
-- While some gammes take screenshots, they're usually engine-related and can't capture overlayes.
+- While some games take screenshots, they're usually engine-related and can't capture overlayes.
 
 - The researcher offers to collaborate on video proof of this module's existence.
 
@@ -55,7 +55,7 @@ This is a complex issue, and discussions are ongoing. I encourage you to do your
 
 A huge thank you to @0xCODEBABE for their initial discovery!
 
-**Screenshots From the Revelation Post:**
+**Screenshots From the Code of the Revelation Post:**
 
 ![](https://i.imgur.com/u13lcWQ.png)
 
