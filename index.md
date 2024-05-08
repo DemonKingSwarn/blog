@@ -7,7 +7,7 @@ Swarn's personal blog, featuring a grab bag of stories, computers, photos, mind,
 
 A weblog means a personal blog rather than a corporate one. It's a retro word for a retro person.
 
-[![RSS](https://github.com/DemonKingSwarn/blog/raw/master/assets/static/rss.gif)](/blog/feed.xml)
+[![EMAIL](https://port19.xyz/buttons/email.gif)](mailto:swarnaditya.isometric@gmail.com)  [![RSS](https://github.com/DemonKingSwarn/blog/raw/master/assets/static/rss.gif)](/blog/feed.xml)
 
 ## Recent blogs
 
