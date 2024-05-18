@@ -7,7 +7,7 @@ category: posts
 
 Hey everyone,
 
-Gaming on Linux in the year 2024 is just incredible. Valve's compatibility layer [Proton](https://en.wikipedia.org/wiki/Proton_(software) but also advancements to the tools running beneath the Proton have really changed the game. Gaming on Linux have become just click and play most games but what about those wont work? Well the most games which don't work are the ones which has kernel level anti-cheats. Many in the online community has setup a virtual machine (VM) passing their GPU through to it and let me just say that this isn't a good idea.
+Gaming on Linux in the year 2024 is just incredible. Valve's compatibility layer Proton but also advancements to the tools running beneath the Proton have really changed the game. Gaming on Linux have become just click and play most games but what about those wont work? Well the most games which don't work are the ones which has kernel level anti-cheats. Many in the online community has setup a virtual machine (VM) passing their GPU through to it and let me just say that this isn't a good idea.
 
 While GPU passthrough is a cool concept that allows you to run a VM and assign resources to it from the underlying host, it's not ideal for gaming, especially if you are trying to bypass anti-cheat limitations.
 
