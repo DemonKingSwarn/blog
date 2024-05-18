@@ -1,13 +1,13 @@
 ---
 layout: post
 title: I Don't Trust Ubisoft
-updated: 2024-05-17
+updated: 2024-05-18
 category: posts
 ---
 
 Hey everyone,
 
-welcome back to yet another blog of me ranting about how I don't trust Ubisoft. So I am sure you guys have heard about the upcomingAssassin's Creed game set in Feudal Japan.
+Welcome back to yet another blog of me ranting about how I don't trust Ubisoft. So I am sure you guys have heard about the upcoming Assassin's Creed game set in Feudal Japan.
 
 Don't get me wrong I love Assassin's Creed franchise, particularly the first three games. These games were by far the most immersive games in the entire franchise. The Ezio trilogy (Assassin's Creed 2, Assassin's Creed Brotherhood, Assassin's Creed Revelations) was the best era of this franchise.
 
