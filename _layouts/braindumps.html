@@ -16,6 +16,9 @@
 
     <link rel="canonical" href="https://demonkingswarn.is-a.dev/blog{{ page.url }}" />
 
+    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+
   </head>
   <body class="single-post">
     {% include header.html %}
@@ -50,5 +53,23 @@
         crossorigin="anonymous"
         async>
 </script>
+
+    <main>
+        <div id="blog-content">
+            <small>Comment section by <a href="https://cactus.chat" target="blank">Cactus Comments</a>.</small>
+            <div id="comment-section">
+
+            </div>
+        </div>
+    </main>
+    <script>
+    initComments({
+        node: document.getElementById("comment-section"),
+        defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+        serverName: "cactus.chat",
+        siteName: "demonkingswarn-blog",
+        commentSectionId: "section1"
+    })
+    </script>
   </body>
 </html>
