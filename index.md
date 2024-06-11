@@ -38,3 +38,15 @@ A weblog means a personal blog rather than a corporate one. It's a retro word fo
 </ul>
 
 [See all braindumps](/blog/braindumps)
+
+## linkback?
+
+I think your site is cool - do you think my site is cool too?
+
+of course you do! feel free to use this button to link back to my website.
+
+<img src="https://demonkingswarn.live/assets/media/buttons/web-button.svg" height="31px" width="88px"> <i>swarn now!</i>
+
+```html
+<a href="https://demonkingswarn.is-a.dev/blog"><img src="https://demonkingswarn.live/assets/media/buttons/web-button.svg" height="31px" width="88px" alt="swarn now!"></a>
+```
