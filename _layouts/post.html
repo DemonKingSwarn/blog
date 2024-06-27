@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="Kg4d0IRSxukjumBhd4jDiC6txVRlb-4jOfl-jT7cD4A" />
+    <meta name="description" content="{{ page.excerpt | strip_html | escape }}" />
+    <meta name="keywords" content="{{ page.keywords | join: ', ' }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html | escape }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demonkingswarn.is-a.dev/blog{{ page.url }}" />
     <title>{{ page.title }} | DemonKingSwarn</title>
     <link href="/blog/assets/css/rouge-github.css" rel="stylesheet" />
     <link href="/blog/assets/css/custom.css" rel="stylesheet" />
