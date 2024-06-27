@@ -2,6 +2,8 @@
 layout: post
 title: My Thailand Experience
 updated: 2024-06-25
+excerpt: "My experiences from Thailand and what are the things I did there"
+keywords: [thailand, thailand trip, thailand experience, life]
 category: posts
 ---
 
