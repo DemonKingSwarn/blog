@@ -9,11 +9,11 @@ category: posts
 
 Hey everyone,
 
-so I am sure you have heard about AI stuffs going on in the world. Aw man, it feels like everyone right now want to include the word "AI" in their products, even if it's basically ML. Thesedays AI has become the new snake oil after NFT or Web 3.0.
+so I am sure you guys have heard about the AI stuffs going on in the world. Aw man, it feels like everyone right now wants to include the word "AI" in their products, even if it's basically ML. Thesedays AI has become the new snake oil after NFT or Web 3.0.
  
 Even Apple joined this bandwagon now, the one company I never expected to follow someone else's lead.
 
-I am so sick of hearing all these new "AI" products comming out now, First [Humane AI Pin](https://humane.com/), then [Rabbit R1](https://www.rabbit.tech/) and now [Friend](https://www.friend.com/), like come on just get over with it. And the funny part is, they claim to make our lives better but actually they are the worst products ever made, like they don't even work most of the time.
+I am so sick of hearing all these new "AI" products coming out now, First [Humane AI Pin](https://humane.com/), then [Rabbit R1](https://www.rabbit.tech/) and now [Friend](https://www.friend.com/), like come on just get over with it. And the funny part is, they claim to make our lives better but actually they are the worst products ever made, like they don't even work most of the time.
 
 Honestly I believe the sooner this AI bubble breaks, the better and then we would work on actual useful implementations of it. Anyways, I hope you guys are having a great day. Take care and I will see you with another post.
 
