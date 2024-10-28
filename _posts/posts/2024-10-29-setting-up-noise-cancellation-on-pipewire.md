@@ -2,8 +2,8 @@
 layout: post
 title: Setting Up Noise Cancellation on Pipewire
 updated: 2024-10-29
-excerpt: "A brief summary for the post"
-keywords: []
+excerpt: "So like me, most of you guys definitely stumbled on some services which have noise cancellation sometimes not working on linux, Microsoft Teams being one of those. So recently I have started using a PipeWire plugin to setup noise cancellation and honestly it works much better than any other noise cancellation solution provided by these services"
+keywords: [pipewire, rnnoise, noise suppression, linux]
 category: posts
 ---
 
