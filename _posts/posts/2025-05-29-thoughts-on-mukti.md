@@ -13,7 +13,8 @@ So recently underDOGS Studio released [Mukti](https://www.muktithegame.com/) gam
 
 So I liked the gameplay reveal trailer, the game has some stunning visuals and some actually detailed environment. We could see some puzzles and all and even without significant story reveals, I can tell that the game has deeper meaning and an engaging storyline. This gameplay reveal has left me wanting more of it from them, and for the first time I am glad it's coming as a Playstation exclusive for a year because this way it can earn some money before coming to PC where the chances of it getting pirated is more.
 
-Anyways don't forget to wishlist it on steam and PS Store.
+Anyways don't forget to wishlist it on steam and PS Store:
 
-Playstation: https://store.playstation.com/en-in/concept/10010544
-Steam: https://store.steampowered.com/app/760250/MUKTI/
+[Playstation](https://store.playstation.com/en-in/concept/10010544)
+
+[Steam](https://store.steampowered.com/app/760250/MUKTI/)
