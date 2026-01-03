@@ -13,10 +13,10 @@ So first of all happy new year to all of you. I know it's been a while since my 
 
 I am writing this post for sharing my Linux setup with all of you guys,
 
-![](./assets/static/imgs/linux-setup/desktop.avif)
-![](./assets/static/imgs/linux-setup/rofi.avif)
-![](./assets/static/imgs/linux-setup/fastfetch.avif)
-![](./assets/static/imgs/linux-setup/neovim_tmux.avif)
+![](/assets/static/imgs/linux-setup/desktop.avif)
+![](/assets/static/imgs/linux-setup/rofi.avif)
+![](/assets/static/imgs/linux-setup/fastfetch.avif)
+![](/assets/static/imgs/linux-setup/neovim_tmux.avif)
 
 You can find my dotfiles [here](https://github.com/demonkingswarn/dotfiles), and my [neovim](https://github.com/demonkingswarn/nvim) and [tmux](https://github.com/demonkingswarn/tmux) respectively. Though note that I use neovim nightly (0.12+), so the plugins are set for its native plugin manager, you may need to change that if you are using the regular neovim.
 
