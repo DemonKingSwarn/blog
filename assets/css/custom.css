@@ -428,3 +428,27 @@ article h2 {
 
 }
 
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--ctp-surface0);
+  border: 2px solid var(--ctp-surface1);
+  border-radius: var(--border-radius);
+  color: var(--ctp-text);
+  margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--ctp-mauve);
+  background-color: var(--ctp-base);
+  box-shadow: 0 0 0 3px rgba(203, 166, 247, 0.2);
+}
+
+.search-input::placeholder {
+  color: var(--ctp-overlay0);
+}
+

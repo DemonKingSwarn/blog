@@ -246,6 +246,93 @@
   function isSinglePostPage() {
     return document.body.classList.contains('single-post');
   }
+
+  function fuzzyMatch(text, pattern) {
+    let patternIndex = 0;
+    let textIndex = 0;
+    const lowerText = text.toLowerCase();
+    const lowerPattern = pattern.toLowerCase();
+
+    while (patternIndex < lowerPattern.length && textIndex < lowerText.length) {
+      if (lowerText[textIndex] === lowerPattern[patternIndex]) {
+        patternIndex++;
+      }
+      textIndex++;
+    }
+
+    return patternIndex === lowerPattern.length;
+  }
+
+  function calculateScore(text, pattern) {
+    const lowerText = text.toLowerCase();
+    const lowerPattern = pattern.toLowerCase();
+
+    if (lowerText === lowerPattern) return 100;
+    if (lowerText.includes(lowerPattern)) return 80;
+
+    if (fuzzyMatch(lowerText, lowerPattern)) {
+      let matches = 0;
+      let patternIndex = 0;
+      for (let i = 0; i < lowerText.length && patternIndex < lowerPattern.length; i++) {
+        if (lowerText[i] === lowerPattern[patternIndex]) {
+          matches++;
+          patternIndex++;
+        }
+      }
+      return Math.round((matches / lowerPattern.length) * 60);
+    }
+
+    return 0;
+  }
+
+  function initSearch() {
+    const postSearchInput = document.getElementById('post-search');
+    const braindumpSearchInput = document.getElementById('braindump-search');
+    const posts = document.querySelectorAll('.post');
+    const braindumps = document.querySelectorAll('.braindump');
+
+    if (postSearchInput) {
+      postSearchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        posts.forEach(function(post) {
+          const title = post.getAttribute('data-title') || '';
+          const content = post.getAttribute('data-content') || '';
+          const titleScore = calculateScore(title, query);
+          const contentScore = calculateScore(content, query);
+          const maxScore = Math.max(titleScore, contentScore);
+
+          if (!query || maxScore > 0) {
+            post.style.display = '';
+            post.style.opacity = query ? (maxScore / 100).toString() : '1';
+          } else {
+            post.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    if (braindumpSearchInput) {
+      braindumpSearchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        braindumps.forEach(function(braindump) {
+          const title = braindump.getAttribute('data-title') || '';
+          const content = braindump.getAttribute('data-content') || '';
+          const titleScore = calculateScore(title, query);
+          const contentScore = calculateScore(content, query);
+          const maxScore = Math.max(titleScore, contentScore);
+
+          if (!query || maxScore > 0) {
+            braindump.style.display = '';
+            braindump.style.opacity = query ? (maxScore / 100).toString() : '1';
+          } else {
+            braindump.style.display = 'none';
+          }
+        });
+      });
+    }
+  }
+
+  initSearch();
 })();
 
 // Adjust viewport meta tag for mobile screens
