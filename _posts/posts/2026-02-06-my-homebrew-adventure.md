@@ -15,6 +15,6 @@ So after I learned about ginger bug, I started using those to make my drinks. An
 
 Here is my most recent drink which I made today, It has apple + black peppers + cinnamon:
 
-![](/assets/static/imgs/my-homebrew-adventure/current_batch.avif)
+![](/blog/assets/static/imgs/my-homebrew-adventure/current_batch.avif)
 
 All right guys, It's time for me to take a leave, here is the music for today: [Hold Fast - Sail North](https://music.youtube.com/watch?v=UOI2nFQ6aYc)
