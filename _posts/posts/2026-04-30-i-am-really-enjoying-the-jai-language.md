@@ -22,11 +22,12 @@ so with all that, lets begin with a "Hello, World!" in jai.
 so i am using linux, so for me the compiler is
 
 > `jai-linux`: the main jai compiler
+>
 > `lld-linux`: the linker
 
 in jai, the "Hello, World!" is "Hello, Sailor!" as Jonathan Blow says it. so we are gonna use that terminology here as well.
 
-```jai
+```odin
 #import "Basic";
 
 main :: () {
@@ -36,7 +37,7 @@ main :: () {
 
 another thing about jai, which makes it different from c++ is that you dont need to have the import, or "include" statement right at the top. you can have it at the bottom itself.
 
-```jai
+```odin
 main :: () {
     print("Hello, Sailor!\n");
 }
@@ -75,7 +76,7 @@ jai-linux main.jai -quiet +Autorun
 
 in jai, essentially your build script is written in the language itself, for example, this is how a first.jai would essentially look. in jai the build script is called `first.jai`.
 
-```jai
+```odin
 #import "Basic";
 #import "Compiler";
 
