@@ -1,29 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-  /* Catppuccin Mocha Colors */
-  --ctp-base: #1e1e2e;
-  --ctp-mantle: #181825;
-  --ctp-crust: #11111b;
-  --ctp-surface0: #313244;
-  --ctp-surface1: #45475a;
-  --ctp-surface2: #585b70;
-  --ctp-overlay0: #6c7086;
-  --ctp-overlay1: #7f849c;
-  --ctp-text: #cdd6f4;
-  --ctp-subtext0: #a6adc8;
-  --ctp-subtext1: #bac2de;
-  --ctp-mauve: #cba6f7;
-  --ctp-lavender: #b4befe;
-  --ctp-blue: #89b4fa;
-  --ctp-sapphire: #74c7ec;
-  --ctp-sky: #89dceb;
-  --ctp-teal: #94e2d5;
-  --ctp-green: #a6e3a1;
-  --ctp-yellow: #f9e2af;
-  --ctp-peach: #fab387;
-  --ctp-red: #f38ba8;
-  --ctp-pink: #f5c2e7;
+  /* TokyoNight Colors */
+  --tny-bg: #1a1b26;
+  --tny-bg-dark: #16161e;
+  --tny-bg-highlight: #292e42;
+  --tny-terminal-black: #414868;
+  --tny-comment: #565f89;
+  --tny-fg: #c0caf5;
+  --tny-fg-dark: #a9b1d6;
+  --tny-magenta: #bb9af7;
+  --tny-blue: #7aa2f7;
+  --tny-cyan: #7dcfff;
+  --tny-green: #9ece6a;
+  --tny-yellow: #e0af68;
+  --tny-orange: #ff9e64;
+  --tny-red: #f7768e;
   
   --border-radius: 6px;
 }
@@ -48,8 +40,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 1.2rem;
-  background-color: var(--ctp-base);
-  color: var(--ctp-text);
+  background-color: var(--tny-bg);
+  color: var(--tny-fg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,13 +49,13 @@ body {
 }
 
 a {
-  color: var(--ctp-mauve);
+  color: var(--tny-magenta);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--ctp-pink);
+  color: var(--tny-blue);
   text-decoration: none;
 }
 
@@ -91,7 +83,7 @@ main img {
   border-radius: var(--border-radius);
   max-width: 100%;
   padding: 4px;
-  border: 1px solid var(--ctp-surface1);
+  border: 1px solid var(--tny-terminal-black);
 }
 
 video {
@@ -122,11 +114,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: var(--ctp-surface0);
+  background-color: var(--tny-bg-highlight);
 }
 
 .posts {
-  border-left: 2px solid var(--ctp-surface1);
+  border-left: 2px solid var(--tny-terminal-black);
   list-style: none;
   padding-left: 1.25rem;
 }
@@ -148,9 +140,9 @@ nav ul li a:hover {
 }
 
 .post::after {
-  border: 2px solid var(--ctp-mauve);
+  border: 2px solid var(--tny-magenta);
   border-radius: 50%;
-  background-color: var(--ctp-base);
+  background-color: var(--tny-bg);
   content: '';
   height: 0.5rem;
   left: -1.5rem;
@@ -160,7 +152,7 @@ nav ul li a:hover {
 }
 
 .braindumps {
-  border-left: 2px solid var(--ctp-surface1);
+  border-left: 2px solid var(--tny-terminal-black);
   list-style: none;
   padding-left: 1.25rem;
 }
@@ -182,9 +174,9 @@ nav ul li a:hover {
 }
 
 .braindump::after {
-  border: 2px solid var(--ctp-mauve);
+  border: 2px solid var(--tny-magenta);
   border-radius: 50%;
-  background-color: var(--ctp-base);
+  background-color: var(--tny-bg);
   content: '';
   height: 0.5rem;
   left: -1.5rem;
@@ -203,7 +195,7 @@ blockquote {
 }
 
 blockquote::before {
-  background-color: var(--ctp-green);
+  background-color: var(--tny-green);
   border-radius: var(--border-radius);
   bottom: 0px;
   content: '';
@@ -218,8 +210,8 @@ blockquote::before {
 }
 
 code {
-  background-color: var(--ctp-surface0);
-  color: var(--ctp-text);
+  background-color: var(--tny-bg-highlight);
+  color: var(--tny-fg);
   border-radius: var(--border-radius);
   font-size: 0.85rem;
   padding: 3px 6px;
@@ -245,7 +237,7 @@ pre code {
 
 hr {
   border: none;
-  border-top: 1px solid var(--ctp-surface1);
+  border-top: 1px solid var(--tny-terminal-black);
   margin: 2rem auto;
   width: 8rem;
 }
@@ -258,7 +250,7 @@ header h1 {
   font-size: 1.75rem;
   margin: 0;
   margin-bottom: 1.2rem;
-  color: var(--ctp-text);
+  color: var(--tny-fg);
   font-weight: 700;
 }
 
@@ -268,18 +260,18 @@ header h1 span {
 
 article h2 {
   margin-bottom: 0.5rem;
-  color: var(--ctp-lavender);
+  color: var(--tny-blue);
   font-weight: 600;
 }
 
 .post-meta {
-  color: var(--ctp-subtext0);
+  color: var(--tny-fg-dark);
   font-size: 0.75rem;
   margin-top: 0;
 }
 
 .braindump-meta {
-  color: var(--ctp-subtext0);
+  color: var(--tny-fg-dark);
   font-size: 0.75rem;
   margin-top: 0;
 }
@@ -299,12 +291,12 @@ article h2 {
 
 .post.published-recently.confetti-please .publish-date,
 .post.published-recently.confetti-please a {
-  background-color: var(--ctp-base);
+  background-color: var(--tny-bg);
 }
 
 .btn {
   border-radius: var(--border-radius);
-  color: var(--ctp-base);
+  color: var(--tny-bg);
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
@@ -321,30 +313,30 @@ article h2 {
 }
 
 .btn-twitter {
-  background-color: var(--ctp-sky);
+  background-color: var(--tny-cyan);
 }
 
 .btn-twitter:active,
 .btn-twitter:focus,
 .btn-twitter:hover {
-  background-color: var(--ctp-sapphire);
+  background-color: var(--tny-blue);
 }
 
 .btn-github {
-  background-color: var(--ctp-surface1);
-  color: var(--ctp-text);
+  background-color: var(--tny-terminal-black);
+  color: var(--tny-fg);
 }
 
 .btn-github:hover {
-  background-color: var(--ctp-surface2);
+  background-color: var(--tny-comment);
 }
 
 .btn-rss {
-  background-color: var(--ctp-peach);
+  background-color: var(--tny-orange);
 }
 
 .btn-rss:hover {
-  background-color: var(--ctp-yellow);
+  background-color: var(--tny-yellow);
 }
 
 .follow-btns .btn + .btn {
