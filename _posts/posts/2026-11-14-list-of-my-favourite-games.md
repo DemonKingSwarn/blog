@@ -15,7 +15,7 @@ In my opinion this is one of the best Life is Strange games out there, and sadly
 
 This one has such an emotional and beautiful story, it's a masterpiece on it's own.
 
-![](/blog/assets/static/imgs/list-games/lis2.png)
+![](/blog/assets/static/imgs/list-games/lis2.jxl)
 
 **2. Hades**
 
@@ -23,13 +23,13 @@ This is by far the most addictive game to me, I have like 100s of hours in this 
 
 I have always been a fan of Greek Mythology, which is why I am even more addicted to this game.
 
-![](/blog/assets/static/imgs/list-games/hades.png)
+![](/blog/assets/static/imgs/list-games/hades.jxl)
 
 **3. Marvel Rivals**
 
 One of the only competitive game I enjoyed. I even used to do fun challenges with my friends in this game, for example, all healer challenge.
 
-![](/blog/assets/static/imgs/list-games/rivals.png)
+![](/blog/assets/static/imgs/list-games/rivals.jxl)
 
 **4. Minecraft**
 
@@ -37,7 +37,7 @@ I do enjoy this block game a lot, even got a server up and running to play with 
 
 I mostly do redstone in this game, though I am a pretty decent builder too.
 
-![](/blog/assets/static/imgs/list-games/mc.png)
+![](/blog/assets/static/imgs/list-games/mc.jxl)
 
 **5. A Plague Tale Franchise**
 
@@ -47,4 +47,4 @@ The first two parts, Innocence and Requiem, has pretty unique mechanics and a re
 
 The third game, Resonance: A Plague Tale Legacy, is a prequel to the first two games and is themed around ancient greece (not entirely though). This doesn't have the same fighting mechanics as the first two games, but is still a lot more fun and also got its own unique mechanics.
 
-![](/blog/assets/static/imgs/list-games/apt.png)
+![](/blog/assets/static/imgs/list-games/apt.jxl)
