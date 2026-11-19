@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Privacy Requires Friction: My Privacy Stack
+title: Privacy Requires Friction
 updated: 2026-11-19
 excerpt: "In this blog, I talked about what my privacy stack is and a lot more."
 keywords: [proton, helium browser, tuta, aegis, kagi, searxng, grapheneos, linux]
