@@ -13,7 +13,7 @@ Today I am just gonna talk about why having a private alternative to most of the
 
 ## Email
 
-Everyone these days just defaults to GMail for their email, or SSO. But you know, using this provider for a SSO is not a good thing, for example, recently a manga artist’s GMail was suspended and it lead to every work he had on his Google Drive get lost forever. 
+Everyone these days just defaults to GMail for their email, or SSO. But you know, using this provider for a SSO is not a good thing, for example, recently a manga artist (Masahiro Itosugi)’s GMail was suspended and it lead to every work he had on his Google Drive get lost forever [(source)](https://cybernews.com/news/google-manga-storage-masahiro-itosugi/).
 
 I started having separate emails for separate stuff, and in Proton Mail instead of GMail. 
 
@@ -71,7 +71,7 @@ On Android I would recommend removing Chrome (using ADB) with Firefox. It suppor
 
 On iPhone, Orion browser by Kagi is really great and it also supports both Chrome and Firefox extensions. 
 
-Safari is also a decent private browser for iPhone, only if you use private relay. 
+Safari is also a decent private browser for iPhone, only if you use private relay (need iCloud+). 
 
 Also note, Helium is working on the Android and iOS support and it may be available soon for mobile. 
 
